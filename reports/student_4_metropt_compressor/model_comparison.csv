@@ -1,0 +1,6 @@
+model,val_f1,val_pr_auc,val_roc_auc,val_balanced_acc,test_precision,test_recall,test_f1,test_pr_auc,test_roc_auc,test_balanced_acc,test_tp,test_fp,test_fn,test_tn
+Random Forest,0.0204,0.6127,0.8838,0.5052,0.0,0.0,0.0,0.0398,0.7818,0.5,0,0,20,4904
+HistGradientBoosting,0.1835,0.2999,0.5986,0.5507,0.0,0.0,0.0,0.0574,0.9657,0.5,0,0,20,4904
+Logistic Regression,0.4756,0.2437,0.8741,0.8154,0.0,0.0,0.0,0.0059,0.5127,0.4982,0,18,20,4886
+Dummy Classifier,0.0446,0.0817,0.5073,0.5073,0.0328,0.1,0.0494,0.0069,0.544,0.544,2,59,18,4845
+Decision Tree,0.0098,0.0816,0.5004,0.5004,0.0,0.0,0.0,0.0041,0.4995,0.4995,0,5,20,4899

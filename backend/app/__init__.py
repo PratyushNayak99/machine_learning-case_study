@@ -1,0 +1,3 @@
+"""
+ForgeWatch AI Backend Application
+"""

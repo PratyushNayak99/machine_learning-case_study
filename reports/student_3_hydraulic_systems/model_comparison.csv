@@ -1,0 +1,6 @@
+model,val_macro_f1,val_balanced_acc,test_accuracy,test_macro_f1,test_weighted_f1,test_balanced_acc,test_recall_failure_3,test_recall_reduced_20,test_recall_optimal_100
+Random Forest,1.0,1.0,0.997,0.997,0.997,0.997,1.0,0.9909,1.0
+Decision Tree,1.0,1.0,0.997,0.997,0.997,0.997,1.0,0.9909,1.0
+Logistic Regression,1.0,1.0,0.997,0.997,0.997,0.997,1.0,0.9909,1.0
+HistGradientBoosting,1.0,1.0,0.997,0.997,0.997,0.997,1.0,0.9909,1.0
+Dummy Classifier,0.326,0.3262,0.2991,0.2982,0.2982,0.2991,0.3455,0.2636,0.2883

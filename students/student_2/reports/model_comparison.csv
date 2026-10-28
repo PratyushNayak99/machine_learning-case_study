@@ -1,0 +1,6 @@
+model,optimal_threshold,val_cost,val_f1,test_cost_tuned (cost units),test_cost_default (cost units),test_fp,test_fn,test_precision,test_recall,test_f1,test_pr_auc,test_roc_auc
+Random Forest,0.1585,6170.0,0.597,10660.0,25470.0,516,11,0.4136,0.9707,0.5801,0.7345,0.9906
+HistGradientBoosting,0.2575,6390.0,0.6169,12550.0,16960.0,405,17,0.4692,0.9547,0.6292,0.8843,0.9922
+Logistic Regression,0.5643,9030.0,0.5158,18830.0,17900.0,333,31,0.5081,0.9173,0.654,0.7996,0.9803
+Decision Tree,0.0694,9040.0,0.4521,20980.0,20980.0,548,31,0.3857,0.9173,0.543,0.6213,0.9199
+Dummy Classifier,0.01,98760.0,0.0314,185440.0,185440.0,244,366,0.0356,0.024,0.0287,0.0237,0.5042

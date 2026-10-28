@@ -1,0 +1,21 @@
+{
+  "dataset_name": "aps_failure_at_scania_trucks",
+  "source_url": "https://archive.ics.uci.edu/dataset/421/aps+failure+at+scania+trucks",
+  "student_owner": "student_2",
+  "domain": "Heavy Transport Vehicles (Air Pressure System)",
+  "total_train_records": 60000,
+  "total_test_records": 16000,
+  "total_attributes": 171,
+  "target_column": "class",
+  "target_type": "binary",
+  "target_classes": {
+    "neg": "Component Failure UNRELATED to APS (Truck is NOT healthy)",
+    "pos": "APS Component Failure"
+  },
+  "cost_formulation": {
+    "cost_fp": 10.0,
+    "cost_fn": 500.0,
+    "formula": "Cost = 10 * FP + 500 * FN"
+  },
+  "missing_value_marker": "na"
+}

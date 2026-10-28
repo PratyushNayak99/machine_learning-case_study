@@ -1,0 +1,54 @@
+{
+  "dataset_name": "ai4i_2020_predictive_maintenance",
+  "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+  "student_owner": "student_1",
+  "domain": "CNC Milling Machine (Synthetic Simulation)",
+  "total_records": 10000,
+  "target_column": "Machine failure",
+  "target_type": "binary",
+  "target_classes": {
+    "0": "No Failure (Nominal Operation)",
+    "1": "Machine Failure"
+  },
+  "raw_features": [
+    "UDI",
+    "Product ID",
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "predictive_features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "excluded_leakage_features": [
+    "UDI",
+    "Product ID",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "feature_types": {
+    "Type": "categorical",
+    "Air temperature [K]": "float64",
+    "Process temperature [K]": "float64",
+    "Rotational speed [rpm]": "int64",
+    "Torque [Nm]": "float64",
+    "Tool wear [min]": "int64"
+  }
+}

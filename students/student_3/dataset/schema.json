@@ -1,0 +1,35 @@
+{
+  "dataset_name": "condition_monitoring_of_hydraulic_systems",
+  "source_url": "https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems",
+  "student_owner": "student_3",
+  "domain": "Industrial Hydraulic Test Rig",
+  "total_cycles": 2205,
+  "cycle_duration_seconds": 60,
+  "target_column": "cooler_condition",
+  "target_type": "multiclass",
+  "target_classes": {
+    "3": "Close to Total Failure (0% efficiency)",
+    "20": "Reduced Cooling Efficiency",
+    "100": "Full Cooling Efficiency"
+  },
+  "sensor_modalities": {
+    "pressure": ["PS1", "PS2", "PS3", "PS4", "PS5", "PS6"],
+    "motor_power": ["EPS1"],
+    "volume_flow": ["FS1", "FS2"],
+    "temperature": ["TS1", "TS2", "TS3", "TS4"],
+    "vibration": ["VS1"],
+    "efficiency_factors": ["CE", "CP", "SE"]
+  },
+  "sampling_rates_hz": {
+    "100_hz": ["PS1", "PS2", "PS3", "PS4", "PS5", "PS6", "EPS1"],
+    "10_hz": ["FS1", "FS2"],
+    "1_hz": ["TS1", "TS2", "TS3", "TS4", "VS1", "CE", "CP", "SE"]
+  },
+  "profile_columns": [
+    "cooler_condition",
+    "valve_condition",
+    "internal_pump_leakage",
+    "hydraulic_accumulator",
+    "stable_flag"
+  ]
+}

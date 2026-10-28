@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Large raw datasets (downloadable via scripts)
+students/**/dataset/raw/*.csv
+students/**/dataset/raw/*.txt
+students/**/dataset/raw/*.zip
+students/**/dataset/raw/*.gz
+students/**/dataset/raw/*.tar*
+students/**/dataset/processed/*.parquet
+students/**/dataset/processed/*.feather
+
+# Frontend builds
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+frontend/.turbo/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

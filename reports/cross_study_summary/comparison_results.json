@@ -1,0 +1,294 @@
+{
+  "completed_studies": [
+    "student_1",
+    "student_2",
+    "student_3",
+    "student_4"
+  ],
+  "dataset_taxonomies": [
+    {
+      "Study": "Student 1",
+      "Dataset": "AI4I 2020 Predictive Maintenance",
+      "Domain": "CNC Milling Machine",
+      "Nature": "Synthetic Physical Simulation",
+      "Dimensions": "10,000 samples, 6 features",
+      "Target Semantics": "Binary machine failure event (Simulated)",
+      "Class Imbalance": "3.39% positive (severe)",
+      "Lead Algorithm": "Logistic Regression"
+    },
+    {
+      "Study": "Student 2",
+      "Dataset": "APS Failure at Scania Trucks",
+      "Domain": "Heavy Transport Vehicle Fleet",
+      "Nature": "Real Industrial Workshop Telemetry",
+      "Dimensions": "76,000 samples, 171 attributes",
+      "Target Semantics": "Binary APS failure vs. other failure (NOT healthy)",
+      "Class Imbalance": "1.67% positive (extreme)",
+      "Lead Algorithm": "Decision Tree Classifier"
+    },
+    {
+      "Study": "Student 3",
+      "Dataset": "Condition Monitoring Hydraulic Systems",
+      "Domain": "Experimental Hydraulic Rig",
+      "Nature": "Physical Bench Test (Cycles)",
+      "Dimensions": "2,205 cycles (60s), 136 features",
+      "Target Semantics": "3-Class component degradation (3, 20, 100)",
+      "Class Imbalance": "Balanced (~33% per class)",
+      "Lead Algorithm": "Random Forest Classifier"
+    },
+    {
+      "Study": "Student 4",
+      "Dataset": "MetroPT-3 Operational Compressor",
+      "Domain": "Urban Metro Train APU",
+      "Nature": "Operational Transit Time-Series",
+      "Dimensions": ">1.5M records, 15-min windows",
+      "Target Semantics": "Failure-event detection (In-event windows)",
+      "Class Imbalance": "Sparse events (4 incidents)",
+      "Lead Algorithm": "HistGradientBoosting Classifier"
+    }
+  ],
+  "algorithm_rankings": [
+    {
+      "Study": "student_1",
+      "Dataset": "AI4I 2020 Predictive Maintenance Dataset",
+      "Model": "Random Forest",
+      "Rank": 1,
+      "Primary Metric": "f1_score",
+      "Score": 0.5773,
+      "PR-AUC": 0.6549,
+      "ROC-AUC": 0.9569,
+      "Balanced Acc": 0.7683
+    },
+    {
+      "Study": "student_1",
+      "Dataset": "AI4I 2020 Predictive Maintenance Dataset",
+      "Model": "HistGradientBoosting",
+      "Rank": 2,
+      "Primary Metric": "f1_score",
+      "Score": 0.5612,
+      "PR-AUC": 0.7654,
+      "ROC-AUC": 0.9678,
+      "Balanced Acc": 0.8654
+    },
+    {
+      "Study": "student_1",
+      "Dataset": "AI4I 2020 Predictive Maintenance Dataset",
+      "Model": "Decision Tree",
+      "Rank": 3,
+      "Primary Metric": "f1_score",
+      "Score": 0.4751,
+      "PR-AUC": 0.5576,
+      "ROC-AUC": 0.8665,
+      "Balanced Acc": 0.8915
+    },
+    {
+      "Study": "student_1",
+      "Dataset": "AI4I 2020 Predictive Maintenance Dataset",
+      "Model": "Logistic Regression",
+      "Rank": 4,
+      "Primary Metric": "f1_score",
+      "Score": 0.2543,
+      "PR-AUC": 0.3856,
+      "ROC-AUC": 0.9034,
+      "Balanced Acc": 0.8448
+    },
+    {
+      "Study": "student_1",
+      "Dataset": "AI4I 2020 Predictive Maintenance Dataset",
+      "Model": "Dummy Classifier",
+      "Rank": 5,
+      "Primary Metric": "f1_score",
+      "Score": 0.0189,
+      "PR-AUC": 0.0337,
+      "ROC-AUC": 0.4912,
+      "Balanced Acc": 0.4912
+    },
+    {
+      "Study": "student_2",
+      "Dataset": "APS Failure at Scania Trucks",
+      "Model": "Logistic Regression",
+      "Rank": 1,
+      "Primary Metric": "f1_score",
+      "Score": 0.654,
+      "PR-AUC": 0.7996,
+      "ROC-AUC": 0.9803,
+      "Balanced Acc": 0.948
+    },
+    {
+      "Study": "student_2",
+      "Dataset": "APS Failure at Scania Trucks",
+      "Model": "HistGradientBoosting",
+      "Rank": 2,
+      "Primary Metric": "f1_score",
+      "Score": 0.6292,
+      "PR-AUC": 0.8843,
+      "ROC-AUC": 0.9922,
+      "Balanced Acc": 0.9644
+    },
+    {
+      "Study": "student_2",
+      "Dataset": "APS Failure at Scania Trucks",
+      "Model": "Random Forest",
+      "Rank": 3,
+      "Primary Metric": "f1_score",
+      "Score": 0.5801,
+      "PR-AUC": 0.7345,
+      "ROC-AUC": 0.9906,
+      "Balanced Acc": 0.9688
+    },
+    {
+      "Study": "student_2",
+      "Dataset": "APS Failure at Scania Trucks",
+      "Model": "Decision Tree",
+      "Rank": 4,
+      "Primary Metric": "f1_score",
+      "Score": 0.543,
+      "PR-AUC": 0.6213,
+      "ROC-AUC": 0.9199,
+      "Balanced Acc": 0.9411
+    },
+    {
+      "Study": "student_2",
+      "Dataset": "APS Failure at Scania Trucks",
+      "Model": "Dummy Classifier",
+      "Rank": 5,
+      "Primary Metric": "f1_score",
+      "Score": 0.0287,
+      "PR-AUC": 0.0237,
+      "ROC-AUC": 0.5042,
+      "Balanced Acc": 0.5042
+    },
+    {
+      "Study": "student_3",
+      "Dataset": "Condition Monitoring of Hydraulic Systems",
+      "Model": "Random Forest",
+      "Rank": 1,
+      "Primary Metric": "macro_f1",
+      "Score": 0.997,
+      "PR-AUC": "N/A",
+      "ROC-AUC": "N/A",
+      "Balanced Acc": 0.997
+    },
+    {
+      "Study": "student_3",
+      "Dataset": "Condition Monitoring of Hydraulic Systems",
+      "Model": "Decision Tree",
+      "Rank": 2,
+      "Primary Metric": "macro_f1",
+      "Score": 0.997,
+      "PR-AUC": "N/A",
+      "ROC-AUC": "N/A",
+      "Balanced Acc": 0.997
+    },
+    {
+      "Study": "student_3",
+      "Dataset": "Condition Monitoring of Hydraulic Systems",
+      "Model": "Logistic Regression",
+      "Rank": 3,
+      "Primary Metric": "macro_f1",
+      "Score": 0.997,
+      "PR-AUC": "N/A",
+      "ROC-AUC": "N/A",
+      "Balanced Acc": 0.997
+    },
+    {
+      "Study": "student_3",
+      "Dataset": "Condition Monitoring of Hydraulic Systems",
+      "Model": "HistGradientBoosting",
+      "Rank": 4,
+      "Primary Metric": "macro_f1",
+      "Score": 0.997,
+      "PR-AUC": "N/A",
+      "ROC-AUC": "N/A",
+      "Balanced Acc": 0.997
+    },
+    {
+      "Study": "student_3",
+      "Dataset": "Condition Monitoring of Hydraulic Systems",
+      "Model": "Dummy Classifier",
+      "Rank": 5,
+      "Primary Metric": "macro_f1",
+      "Score": 0.2982,
+      "PR-AUC": "N/A",
+      "ROC-AUC": "N/A",
+      "Balanced Acc": 0.2991
+    },
+    {
+      "Study": "student_4",
+      "Dataset": "MetroPT-3 Operational Transit Compressor Dataset",
+      "Model": "Dummy Classifier",
+      "Rank": 1,
+      "Primary Metric": "f1_score",
+      "Score": 0.0494,
+      "PR-AUC": 0.0069,
+      "ROC-AUC": 0.544,
+      "Balanced Acc": 0.544
+    },
+    {
+      "Study": "student_4",
+      "Dataset": "MetroPT-3 Operational Transit Compressor Dataset",
+      "Model": "HistGradientBoosting",
+      "Rank": 2,
+      "Primary Metric": "f1_score",
+      "Score": 0.0,
+      "PR-AUC": 0.0574,
+      "ROC-AUC": 0.9657,
+      "Balanced Acc": 0.5
+    },
+    {
+      "Study": "student_4",
+      "Dataset": "MetroPT-3 Operational Transit Compressor Dataset",
+      "Model": "Random Forest",
+      "Rank": 3,
+      "Primary Metric": "f1_score",
+      "Score": 0.0,
+      "PR-AUC": 0.0398,
+      "ROC-AUC": 0.7818,
+      "Balanced Acc": 0.5
+    },
+    {
+      "Study": "student_4",
+      "Dataset": "MetroPT-3 Operational Transit Compressor Dataset",
+      "Model": "Decision Tree",
+      "Rank": 4,
+      "Primary Metric": "f1_score",
+      "Score": 0.0,
+      "PR-AUC": 0.0041,
+      "ROC-AUC": 0.4995,
+      "Balanced Acc": 0.4995
+    },
+    {
+      "Study": "student_4",
+      "Dataset": "MetroPT-3 Operational Transit Compressor Dataset",
+      "Model": "Logistic Regression",
+      "Rank": 5,
+      "Primary Metric": "f1_score",
+      "Score": 0.0,
+      "PR-AUC": 0.0059,
+      "ROC-AUC": 0.5127,
+      "Balanced Acc": 0.4982
+    }
+  ],
+  "best_models_by_dataset": {
+    "student_1": {
+      "dataset": "AI4I 2020 Predictive Maintenance Dataset",
+      "best_model": "HistGradientBoosting",
+      "selection_criterion": "Validation PR-AUC"
+    },
+    "student_2": {
+      "dataset": "APS Failure at Scania Trucks",
+      "best_model": "Random Forest",
+      "selection_criterion": "Minimum Operational Cost (10*FP + 500*FN)"
+    },
+    "student_3": {
+      "dataset": "Condition Monitoring of Hydraulic Systems",
+      "best_model": "Random Forest",
+      "selection_criterion": "Validation Macro-F1"
+    },
+    "student_4": {
+      "dataset": "MetroPT-3 Operational Transit Compressor Dataset",
+      "best_model": "Random Forest",
+      "selection_criterion": "Validation PR-AUC"
+    }
+  }
+}
